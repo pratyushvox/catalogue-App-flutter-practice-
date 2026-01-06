@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/widgets/drawer.dart';
 
 class Homepage extends StatelessWidget {
   @override
@@ -7,11 +8,10 @@ class Homepage extends StatelessWidget {
     String name = "Pratyush khadka";
 
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("Catalogue App"),
+        title: const Text("Catalogue App"),
         centerTitle: true,
-        backgroundColor: Colors.deepPurple,
-        foregroundColor: Colors.red,
       ),
       body: Center(
         child: Column(
@@ -29,7 +29,7 @@ class Homepage extends StatelessWidget {
           ],
         ),
       ),
-      drawer: Drawer(backgroundColor: Colors.pink),
+      drawer: MyDrawer(),
     );
   }
 }
