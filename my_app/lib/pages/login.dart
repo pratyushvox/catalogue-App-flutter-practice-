@@ -24,7 +24,7 @@ class _LoginState extends State<Login> {
       await Future.delayed(Duration(seconds: 1));
 
       // navigate to Home
-      await Navigator.pushNamed(context, MyRoutes.HomeRoute);
+      await Navigator.pushNamed(context, MyRoutes.homeRoute);
 
       setState(() {
         changeButton = false;
